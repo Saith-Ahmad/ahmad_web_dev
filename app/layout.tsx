@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Rubik } from 'next/font/google'
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import FrontHeader from "@/components/shared/FrontHeader";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const FiraCode = Rubik({ subsets: ['latin'] , weight:['300','400', '500', '600','700','800', '900'  ]})
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,9 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={` ${FiraCode.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+            <FrontHeader/>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

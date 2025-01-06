@@ -2,26 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-[#e3c8fd] to-[#F3E8FF] text-foreground;
+  }
+
+  .dark body {
+    @apply bg-gradient-to-r from-[#210b27] to-[#0e0018] text-foreground;
+  }
+
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 255 100% 97%; /* Light Purple Background */
+    --foreground: 240 10% 10%; /* Darker Text for Contrast */
+    --card: 255 100% 100%; /* White for Cards */
+    --card-foreground: 240 10% 10%;
+    --popover: 255 100% 100%; /* Same as card */
+    --popover-foreground: 240 10% 10%;
+    --primary: 270 83% 65%; /* Bright Purple */
+    --primary-foreground: 255 100% 100%; /* White Text */
+    --secondary: 270 50% 90%; /* Light Purple for Highlights */
+    --secondary-foreground: 240 10% 10%;
+    --muted: 270 40% 85%; /* Muted Light Purple */
+    --muted-foreground: 240 10% 30%;
+    --accent: 270 70% 75%; /* Slightly Brighter Purple */
+    --accent-foreground: 240 10% 10%;
+    --destructive: 0 84.2% 60.2%; /* Red for Destructive */
+    --destructive-foreground: 255 100% 100%;
+    --border: 270 20% 80%; /* Light Purple Borders */
+    --input: 270 20% 80%;
+    --ring: 270 83% 65%;
+    --chart-1: 270 75% 50%;
+    --chart-2: 290 60% 45%;
+    --chart-3: 300 50% 40%;
+    --chart-4: 270 70% 60%;
+    --chart-5: 270 80% 65%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 270 30% 12%; /* Dark Purple Background */
+    --foreground: 270 60% 95%; /* Light Text */
+    --card: 270 30% 15%; /* Dark Purple for Cards */
+    --card-foreground: 270 60% 95%;
+    --popover: 270 30% 15%;
+    --popover-foreground: 270 60% 95%;
+    --primary: 270 83% 65%; /* Bright Purple */
+    --primary-foreground: 255 100% 100%;
+    --secondary: 270 40% 30%; /* Muted Purple for Highlights */
+    --secondary-foreground: 270 60% 95%;
+    --muted: 270 20% 20%; /* Dark Muted Purple */
+    --muted-foreground: 270 50% 75%;
+    --accent: 270 70% 50%; /* Vibrant Purple */
+    --accent-foreground: 270 60% 95%;
+    --destructive: 0 62.8% 30.6%; /* Red for Destructive */
+    --destructive-foreground: 255 100% 100%;
+    --border: 270 20% 20%; /* Darker Borders */
+    --input: 270 20% 20%;
+    --ring: 270 83% 65%;
+    --chart-1: 270 70% 50%;
+    --chart-2: 290 60% 45%;
+    --chart-3: 300 50% 40%;
+    --chart-4: 270 70% 60%;
+    --chart-5: 270 80% 65%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
   }
 }
+
+
+
