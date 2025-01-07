@@ -85,6 +85,9 @@ const config: Config = {
     				'5': 'hsl(var(--chart-5))'
     			}
     		},
+    		boxShadow: {
+    			meetingModel: 'inset 0 4px 9px rgba(211, 222, 248, 0.53), inset 0 -6px 10px rgba(124, 58, 237, 0.53)'
+    		},
     		borderRadius: {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
@@ -95,7 +98,9 @@ const config: Config = {
     			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
     			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
     			shine: 'shine var(--duration) infinite linear',
-    			orbit: 'orbit calc(var(--duration)*1s) linear infinite'
+    			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+    			marquee: 'marquee var(--duration) infinite linear',
+    			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
     		},
     		keyframes: {
     			'shimmer-slide': {
@@ -139,6 +144,22 @@ const config: Config = {
     				},
     				'100%': {
     					transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
+    				}
+    			},
+    			marquee: {
+    				from: {
+    					transform: 'translateX(0)'
+    				},
+    				to: {
+    					transform: 'translateX(calc(-100% - var(--gap)))'
+    				}
+    			},
+    			'marquee-vertical': {
+    				from: {
+    					transform: 'translateY(0)'
+    				},
+    				to: {
+    					transform: 'translateY(calc(-100% - var(--gap)))'
     				}
     			}
     		}
