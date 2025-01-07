@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-[#e3c8fd] to-[#F3E8FF] text-foreground;
+    @apply bg-gradient-to-r from-[#edd9ff] to-[#F3E8FF] text-foreground;
   }
 
   .dark body {
@@ -76,6 +76,21 @@
   body {
     @apply text-foreground;
   }
+}
+
+
+.custom_card_class{
+  @apply bg-black bg-opacity-10 dark:bg-opacity-30 backdrop-blur-lg rounded-xl  shadow-[#0000002f] shadow-md dark:shadow-[#d8b4fe58];
+}
+
+.syntax_highlighter{
+  @apply bg-d_bg_purple_dark dark:bg-black bg-opacity-100 dark:bg-opacity-30 backdrop-blur-lg rounded-xl  meeting_model
+}
+
+.meeting_model{
+  box-shadow: inset 0 4px 9px #d3def887,
+  inset 0 -6px 10px #7c3aed88;
+  /* background: linear-gradient(145deg, #d3def82d, #1a0245c1); */
 }
 
 

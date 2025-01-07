@@ -30,11 +30,11 @@ function TypeEffect() {
         };
     }, [roleIndex]);
     return (
-        <>
-            <h2 className="text-3xl lg:text-6xl text-center min-h-[50px]  lg:min-h-[70px] font-semibold bg-gradient-to-r from-accent_purple via-purple-800 to-accent_purple bg-clip-text text-transparent dark:from-d_text_purple dark:via-purple-300 dark:to-bg_purple_light">
+        <div className='relative min-h-[60px] flex items-center justify-center w-full'>
+            <h2 className="text-4xl max-sm:absolute   md:text-5xl lg:text-6xl text-center min-h-[50px]  lg:min-h-[70px] font-semibold bg-gradient-to-r from-accent_purple via-purple-800 to-accent_purple bg-clip-text text-transparent dark:from-d_text_purple dark:via-purple-300 dark:to-bg_purple_light">
                 {typedText}
             </h2>
-        </>
+        </div>
     )
 }
 

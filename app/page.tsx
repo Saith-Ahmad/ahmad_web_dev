@@ -6,7 +6,7 @@ import React from "react";
 
 const TestComponent: React.FC = () => {
   return (
-    <div className="min-h-[300vh] mt-10">
+    <div className="min-h-[300vh] -mt-20">
       <Hero/>
       <About/>
       <Work/>

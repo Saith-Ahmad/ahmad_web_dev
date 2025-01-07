@@ -93,7 +93,9 @@ const config: Config = {
     		animation: {
     			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
     			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
-    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+    			shine: 'shine var(--duration) infinite linear',
+    			orbit: 'orbit calc(var(--duration)*1s) linear infinite'
     		},
     		keyframes: {
     			'shimmer-slide': {
@@ -118,6 +120,25 @@ const config: Config = {
     			'border-beam': {
     				'100%': {
     					'offset-distance': '100%'
+    				}
+    			},
+    			shine: {
+    				'0%': {
+    					'background-position': '0% 0%'
+    				},
+    				'50%': {
+    					'background-position': '100% 100%'
+    				},
+    				to: {
+    					'background-position': '0% 0%'
+    				}
+    			},
+    			orbit: {
+    				'0%': {
+    					transform: 'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))'
+    				},
+    				'100%': {
+    					transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
     				}
     			}
     		}
