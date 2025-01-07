@@ -2,7 +2,6 @@ import About from "@/components/pages/About";
 import Contact from "@/components/pages/Contact";
 import Hero from "@/components/pages/Hero";
 import Work from "@/components/pages/Work";
-import FrontHeader from "@/components/shared/FrontHeader";
 import React from "react";
 
 const TestComponent: React.FC = () => {

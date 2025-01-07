@@ -32,7 +32,7 @@ export function AnimatedBeamDemo() {
 
   return (
     <div
-      className="relative flex w-full  max-w-[500px] items-center justify-center overflow-hidden rounded-lg "
+      className="relative flex w-full  max-w-[500px] items-center justify-center overflow-hidden rounded-lg mt-5 md:mt-2"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between gap-10">

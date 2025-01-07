@@ -9,11 +9,7 @@ import { Link } from 'react-scroll';
 
 import {
   Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  SheetContent
 } from "@/components/ui/sheet"
 
 
@@ -27,7 +23,7 @@ function FrontHeader() {
   ];
 
   return (
-    <div className="container mt-4 sticky top-4 z-50">
+    <div className="container sticky top-4 z-50">
       <div className="hidden lg:flex flex-row justify-between items-center px-3 py-1 bg-black bg-opacity-10 dark:bg-opacity-30 backdrop-blur-lg rounded-2xl shadow-xl shadow-[#0000002f] dark:shadow-lg dark:shadow-[#d8b4fe58]">
         {/* Logo */}
         <div>
