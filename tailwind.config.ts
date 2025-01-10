@@ -85,9 +85,6 @@ const config: Config = {
     				'5': 'hsl(var(--chart-5))'
     			}
     		},
-			backgroundImage:{
-				bg1 : "url('/choose.png')"
-			},
     		boxShadow: {
     			meetingModel: 'inset 0 4px 9px rgba(211, 222, 248, 0.53), inset 0 -6px 10px rgba(124, 58, 237, 0.53)'
     		},
@@ -96,15 +93,48 @@ const config: Config = {
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
     		},
-			animation: {
-				floating: "floating 8s infinite ease-in-out",
-			  },
-			  keyframes: {
-				floating: {
-				  "0%, 100%": { transform: "translate(0, 0)" },
-				  "50%": { transform: "translate(20px, -30px)" },
-				},
-			  },
+    		animation: {
+    			spotlight: 'spotlight 2s ease .75s 1 forwards',
+    			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
+    			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
+    			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+    		},
+    		keyframes: {
+    			spotlight: {
+    				'0%': {
+    					opacity: '0',
+    					transform: 'translate(-72%, -62%) scale(0.5)'
+    				},
+    				'100%': {
+    					opacity: '1',
+    					transform: 'translate(-50%,-40%) scale(1)'
+    				}
+    			},
+    			'shimmer-slide': {
+    				to: {
+    					transform: 'translate(calc(100cqw - 100%), 0)'
+    				}
+    			},
+    			'spin-around': {
+    				'0%': {
+    					transform: 'translateZ(0) rotate(0)'
+    				},
+    				'15%, 35%': {
+    					transform: 'translateZ(0) rotate(90deg)'
+    				},
+    				'65%, 85%': {
+    					transform: 'translateZ(0) rotate(270deg)'
+    				},
+    				'100%': {
+    					transform: 'translateZ(0) rotate(360deg)'
+    				}
+    			},
+    			'border-beam': {
+    				'100%': {
+    					'offset-distance': '100%'
+    				}
+    			}
+    		}
     	}
     },
 	plugins: [require("tailwindcss-animate"), addVariablesForColors,
