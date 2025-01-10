@@ -54,7 +54,7 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-full rounded-lg  p-4 font-mono text-sm" 
+    <div className="relative w-full rounded-lg  p-4 font-mono text-sm " 
       style={{
         maxWidth: "100%", // Ensures full-width
         overflowX: "auto", // Allows horizontal scrolling if content overflows
@@ -83,7 +83,7 @@ export const CodeBlock = ({
             <div className="text-xs text-zinc-400">{filename}</div>
             <button
               onClick={copyToClipboard}
-              className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-200 transition-colors font-sans"
+              className=" flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-200 transition-colors font-sans"
             >
               {copied ? <IconCheck size={14} /> : <IconCopy size={14} />}
             </button>
@@ -102,6 +102,7 @@ export const CodeBlock = ({
         wrapLines={true}
         showLineNumbers={true}
         lineProps={(lineNumber) => ({
+          className: ` md:overflow-hidden`,
           style: {
             backgroundColor: activeHighlightLines.includes(lineNumber)
               ? "rgba(255,255,255,0.1)"
@@ -109,8 +110,6 @@ export const CodeBlock = ({
             display: "block",
             width: "100%",
             fontSize:'1rem',
-
-            
           },
         })}
         PreTag="div"

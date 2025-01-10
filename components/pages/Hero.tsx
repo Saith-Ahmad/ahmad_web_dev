@@ -44,7 +44,7 @@ function Hero() {
                     <div className="">
                         {/* Radial gradient for the container to give a faded look */}
                         <div
-                            className="absolute pointer-events-none inset-0 flex items-center justify-center 
+                            className=" pointer-events-none inset-0 flex items-center justify-center 
                                 backdrop-blur-2xl [mask-image:radial-gradient(ellipse_at_center,transparent_55%,black)]"
                         ></div>
                         <Spotlight
