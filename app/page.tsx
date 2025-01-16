@@ -4,6 +4,7 @@ import Contact from "@/components/pages/Contact";
 import Experience from "@/components/pages/Experience";
 import Hero from "@/components/pages/Hero";
 import Technologies from "@/components/pages/Technologies";
+import { Testimonial } from "@/components/pages/Testimonials";
 import Work from "@/components/pages/Work";
 import React from "react";
 
@@ -13,9 +14,10 @@ const TestComponent: React.FC = () => {
       <Hero/>
       <About/>
       <Technologies/>
-      <ChooseMe/>
-      <Experience/> 
       <Work/>
+      <Experience/> 
+      <Testimonial/>
+      <ChooseMe/>
       <Contact/>
     </div>
   );

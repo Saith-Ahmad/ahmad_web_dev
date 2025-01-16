@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { ModeToggle } from '../theme/ModeToogler';
 import Image from 'next/image';
-import ShimmerButton from '../ui/shimmer-button';
 import { Github, Linkedin, Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Link } from 'react-scroll';
@@ -11,6 +10,7 @@ import {
   Sheet,
   SheetContent
 } from "@/components/ui/sheet"
+import ShimmerButton from '../ui/shimmer-button';
 
 
 function FrontHeader() {
@@ -27,7 +27,7 @@ function FrontHeader() {
       <div className="hidden lg:flex flex-row justify-between items-center px-3 py-1 bg-black bg-opacity-10 dark:bg-opacity-30 backdrop-blur-lg rounded-2xl shadow-xl shadow-[#0000002f] dark:shadow-lg dark:shadow-[#d8b4fe58] h-[80px] overflow-hidden">
         {/* Logo */}
         <div className='w-[150px]'>
-          <Image src={'/logo.png'} alt="logo" style={{ width: '100%', height: 'auto' }} width={0} height={0} unoptimized  />
+          <Image src={'/logo.png'} alt="logo" style={{ width: '100%', height: 'auto' }} width={0} height={0} unoptimized />
         </div>
 
         {/* Navigation Links */}
@@ -53,15 +53,21 @@ function FrontHeader() {
 
         {/* Action Buttons */}
         <div className="flex items-center justify-center gap-2">
-          <ShimmerButton shimmerColor="#F3E8FF" background={'#4A148C'}>
+         <a href="https://wa.link/keu3ge" target='_blank'>
+         <ShimmerButton shimmerColor="#F3E8FF" background={'#4A148C'}>
             <span className="text-white">Get In Touch</span>
           </ShimmerButton>
-          <Button size={'icon'} className="bg-text_purple">
-            <Github fill="white" />
-          </Button>
-          <Button size={'icon'} className="bg-text_purple">
-            <Linkedin fill="white" />
-          </Button>
+         </a>
+          <a href="https://github.com/Saith-Ahmad" target='_blank' rel="noopener noreferrer">
+            <Button size={'icon'} className="bg-text_purple">
+              <Github fill="white" />
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-ahmad13/" target='_blank' rel="noopener noreferrer">
+            <Button size={'icon'} className="bg-text_purple">
+              <Linkedin fill="white" />
+            </Button>
+          </a>
           <ModeToggle />
         </div>
       </div>
@@ -70,7 +76,7 @@ function FrontHeader() {
       {/* Mobile Nav */}
       <div className='lg:hidden flex flex-row justify-between items-center px-3 py-1 bg-black bg-opacity-10 dark:bg-opacity-30 backdrop-blur-lg rounded-2xl shadow-xl shadow-[#0000002f] dark:shadow-lg dark:shadow-[#d8b4fe58] overflow-hidden h-[70px]'>
         <div className='w-[120px]'>
-        <Image src={'/logo.png'} alt="logo" style={{ width: '100%', height: 'auto' }} width={0} height={0} unoptimized  />
+          <Image src={'/logo.png'} alt="logo" style={{ width: '100%', height: 'auto' }} width={0} height={0} unoptimized />
         </div>
         <Button size={'icon'} className="bg-text_purple" onClick={() => setIsMobileNavOpen(true)}>
           <Menu fill="white" />
@@ -112,17 +118,23 @@ function FrontHeader() {
             </div>
 
             <div className="flex items-center justify-start gap-2 ps-2">
-              <Button size={'icon'} className="bg-text_purple">
-                <Github fill="white" />
-              </Button>
-              <Button size={'icon'} className="bg-text_purple">
-                <Linkedin fill="white" />
-              </Button>
+              <a href="https://github.com/Saith-Ahmad" target='_blank' rel="noopener noreferrer">
+                <Button size={'icon'} className="bg-text_purple">
+                  <Github fill="white" />
+                </Button>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-ahmad13/" target='_blank' rel="noopener noreferrer">
+                <Button size={'icon'} className="bg-text_purple">
+                  <Linkedin fill="white" />
+                </Button>
+              </a>
               <ModeToggle />
             </div>
+            <a href="https://wa.link/keu3ge" target='_blank'>
             <ShimmerButton shimmerColor="#F3E8FF" background={'#4A148C'}>
               <span className="text-white">Get In Touch</span>
             </ShimmerButton>
+            </a>
           </SheetContent>
         </Sheet>
 

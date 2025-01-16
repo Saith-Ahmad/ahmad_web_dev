@@ -7,8 +7,8 @@ import { TextAnimate } from '../ui/text-animate'
 
 function Technologies() {
     return (
-        <div className='py-20 w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-small-white/[0.1] bg-grid-small-black/[0.1] relative flex items-center justify-center overflow-hidden'>
-            <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#00000028]  bg-opacity-5 backdrop-blur-2xl bg-[#ffffff36] [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)] z-40 blur-3xl'></div>
+        <div className=' py-20 w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-small-white/[0.1] bg-grid-small-black/[0.1] relative flex items-center justify-center overflow-hidden'>
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,purple)]"></div>
 
             <div className='flex flex-col justify-center items-center'>
 
@@ -26,14 +26,17 @@ function Technologies() {
                     </div>
                     <div className='flex flex-col items-center justify-normal'>
                         <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
-                            You Think, I Execute
+                            The Skills Behind
+                        </TextAnimate>
+                        <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
+                            the Solutions
                         </TextAnimate>
                         <p className='text-xl text-center max-w-[750px] dark:text-gray-300 mt-2'>
-                            Equipped with tools and expertise to solve real-world problems.
+                            The cutting-edge tools and frameworks I use to bring visions to life.
                         </p>
                     </div>
                 </div>
-                <div className='overflow-hidden'>
+                <div className='overflow-hidden mb-5'>
                     <Marquee pauseOnHover reverse className="[--duration:30s]">
                         {
                             techIcons.map((item) => (
@@ -53,6 +56,10 @@ function Technologies() {
                         }
                     </Marquee>
                 </div>
+
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#ffffff50] dark:from-background"></div>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#ffffff50] dark:from-background"></div>
+
             </div>
         </div>
     )

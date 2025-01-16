@@ -30,7 +30,7 @@ function ChooseMe() {
                 </div>
                 <Image src={'/choose.png'} alt='why choose me' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} unoptimized />
             </div>
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#00000040] bg-[#ffffff30] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_70%,purple)]"></div>
         </div>
     )
 }

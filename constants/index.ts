@@ -126,31 +126,82 @@ export const techIcons = [
 ]
 
 
-
 export const experienceData = [
   {
-    heading: "Full-Stack Developer",
+    heading: "Learned Basics",
+    year: "2022",
+    description:
+      "Started coding with HTML, CSS, and JavaScript. Built static websites to understand web development fundamentals.",
+  },
+  {
+    heading: "Exploring No-Code Platforms",
     year: "2023",
-    description: "Started working as a Full-Stack Developer, building dynamic web apps.",
+    description:
+      "Mastered Webflow and WordPress to design efficient websites, delivering appealing and functional client solutions.",
   },
   {
     heading: "Frontend Developer",
-    year: "2022",
-    description: "Enhanced frontend skills by crafting responsive designs with React.",
+    year: "2023",
+    description:
+      "Enhanced skills in building responsive UIs with React and Tailwind CSS. Completed internships for hands-on experience.",
   },
   {
-    heading: "Web Designer Intern",
-    year: "2021",
-    description: "Interned as a Web Designer, creating visually appealing user interfaces.",
+    heading: "Full-Stack Developer",
+    year: "2024",
+    description:
+      "Built scalable web applications using Next.js and MERN stack, delivering user-centric solutions with robust architecture.",
   },
   {
-    heading: "Learning Basics",
-    year: "2020",
-    description: "Began my journey into coding, learning HTML, CSS, and JavaScript.",
+    heading: "BS Software Engineering",
+    year: "2022-2026",
+    description:
+      "Pursuing Software Engineering at COMSATS Lahore while honing my technical and professional skills.",
   },
   {
-    heading: "Learning Basics",
-    year: "2020",
-    description: "Began my journey into coding, learning HTML, CSS, and JavaScript.",
+    heading: "Future Goals",
+    year: "2025",
+    description:
+      "Aiming to help businesses and employers with tailored web solutions using expertise in full-stack and no-code platforms.",
   },
 ];
+
+
+export const reviews = [
+  {
+    name: "Huzaifa",
+    username: "@huzaifa",
+    body: "I couldn’t be happier with my dropshipping store, Skiniify.com. Ahmad handled everything with professionalism and delivered excellent results!",
+    img: "/review/2.png",
+  },
+  {
+    name: "Shaheer Sheikh",
+    username: "@shaheer",
+    body: "The clothing e-commerce website Kinitestyles.com was exactly what I envisioned. Ahmad’s expertise made the entire process seamless. Highly recommend him!",
+    img: "/review/6.webp",
+  },
+  {
+    name: "Zahida Zahid",
+    username: "@zahida",
+    body: "Thanks to the e-commerce website Ahmad created, my local clothing business has gone digital. The results have been transformative for my sales!",
+    img: "/review/5.jpeg",
+  },
+  {
+    name: "Anas",
+    username: "@anas",
+    body: "During his internship at Xoftics, Ahmad’s dedication and innovative ideas stood out. He was a great asset to our team!",
+    img: "/review/1.png",
+  },
+  {
+    name: "Haroon",
+    username: "@haroon",
+    body: "The Webflow landing page Ahmad designed for my company is nothing short of amazing. His creativity and attention to detail are impressive.",
+    img: "/review/4.png",
+  },
+  {
+    name: "Abdullah",
+    username: "@abdullah",
+    body: "I needed a dynamic web application in Next.js, and Ahmad delivered beyond expectations. His focus on quality and precision is unmatched.",
+    img: "/review/3.png",
+  },
+];
+

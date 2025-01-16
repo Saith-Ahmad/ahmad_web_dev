@@ -3,6 +3,7 @@ import { Rubik } from 'next/font/google'
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import FrontHeader from "@/components/shared/FrontHeader";
+import Footer from "@/components/shared/Footer";
 
 const FiraCode = Rubik({ subsets: ['latin'] , weight:['300','400', '500', '600','700','800', '900'  ]})
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange>
             <FrontHeader/>
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

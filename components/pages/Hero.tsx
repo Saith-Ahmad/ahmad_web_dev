@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { BorderBeam } from "../ui/border-beam";
 import ShimmerButton from "../ui/shimmer-button";
 import { AnimatedBeamDemo } from "../shared/BeamDemo";
-import { Spotlight } from "../ui/SpotLight";
+// import { Spotlight } from "../ui/SpotLight";
 import TypeEffect from "../shared/TypeEffect";
+import { Spotlight } from "../ui/SpotLight";
 
 function Hero() {
     return (
-        <div className="min-h-[115vh] md:min-h-[110vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]  flex items-center justify-center overflow-x-hidden">
+        <div className="min-h-[115vh] md:min-h-[110vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]  flex items-center justify-center overflow-hidden">
             <div
                 id="hero"
                 className="py-16  container items-center justify-center mt-14"
@@ -25,7 +26,7 @@ function Hero() {
                         />
                     </div>
                     <h1 className="lg:text-8xl text-7xl text-center mt-1 text-d_bg_purple_dark dark:text-white">
-                        <span className="text-5xl md:text-7xl lg:text-8xl">Hi, I'M </span>{" "} <br className="md:hidden"/>
+                        <span className="text-5xl md:text-7xl lg:text-8xl">Hi, I'M </span>{" "} <br className="md:hidden" />
                         <span className=" font-bold bg-gradient-to-r from-purple-500 via-pink-500  to-red-500 bg-clip-text text-transparent">
                             Ahmad
                         </span>
@@ -36,22 +37,29 @@ function Hero() {
                         From front-end finesse to back-end brilliance, I design for
                         performance, scalability, and seamless user experiences.
                     </p>
-                    <ShimmerButton shimmerColor="#F3E8FF" background={"#4A148C"}>
-                        <span className="text-white">See How Can i Help You!</span>
-                    </ShimmerButton>
+                    <a href="https://wa.link/as7ln9" target="_blank">
+                        <ShimmerButton shimmerColor="#F3E8FF" background={"#4A148C"}>
+                            <span className="text-white">See How Can i Help You!</span>
+                        </ShimmerButton>
+                    </a>
                     <AnimatedBeamDemo />
 
                     <div className="">
                         {/* Radial gradient for the container to give a faded look */}
-                        <div
+                        {/* <div
                             className=" pointer-events-none inset-0 flex items-center justify-center 
                                 backdrop-blur-2xl [mask-image:radial-gradient(ellipse_at_center,transparent_55%,black)]"
-                        ></div>
+                        ></div> */}
+                        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,purple)]"></div>
+                        
                         <Spotlight
-                            className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen overflow-hidden"
-                            fill="#7c3aed9d"
+                            className="-top-0 -left-10 md:-left-32 md:-top-20 "
+                            fill="#7c3aed"
                         />
-                         <Spotlight className="-left-80 -top-20 h-[80vh] w-[50vw]" fill="#ffffff81" />
+                        <Spotlight
+                            className="top-0 -left-40 md:left-52 md:-top-10"
+                            fill="white"
+                        />
                     </div>
                 </div>
             </div>
