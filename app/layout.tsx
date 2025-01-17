@@ -31,7 +31,7 @@ export default function RootLayout({
           content="A Fullstack developer solution to your customized web requirements"
         />
         <meta property="og:image" content="/images/preview.png" />
-        <meta property="og:url" content="https://www.yoursite.com" />
+        <meta property="og:url" content="https://ahmad-web-dev.vercel.app" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
