@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BorderBeam } from "../ui/border-beam";
 import ShimmerButton from "../ui/shimmer-button";
 import { AnimatedBeamDemo } from "../shared/BeamDemo";
-// import { Spotlight } from "../ui/SpotLight";
 import TypeEffect from "../shared/TypeEffect";
 import { Spotlight } from "../ui/SpotLight";
 
@@ -45,11 +44,7 @@ function Hero() {
                     <AnimatedBeamDemo />
 
                     <div className="">
-                        {/* Radial gradient for the container to give a faded look */}
-                        {/* <div
-                            className=" pointer-events-none inset-0 flex items-center justify-center 
-                                backdrop-blur-2xl [mask-image:radial-gradient(ellipse_at_center,transparent_55%,black)]"
-                        ></div> */}
+                       
                         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,purple)]"></div>
                         
                         <Spotlight

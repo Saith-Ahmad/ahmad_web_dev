@@ -48,6 +48,8 @@ export function ProjectsGrid() {
                                         width="1000"
                                         className="h-30 w-full object-cover rounded-xl shadow-lg  shadow-[#cec2de3a]"
                                         alt="thumbnail"
+                                        placeholder="blur"
+                                        blurDataURL="/placeholder.png"
                                     />
                                 </CardItem>
                                 <div className="p-3 mt-2">
