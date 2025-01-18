@@ -26,23 +26,20 @@ export default function RootLayout({
       <Head>
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Ahmad Web Dev" />
-        <meta
-          property="og:description"
-          content="A Fullstack developer solution to your customized web requirements"
-        />
-        <meta property="og:image" content="https://ahmad-web-dev.vercel.app/preview.PNG" />
+        <meta property="og:description" content="A Fullstack developer solution to your customized web requirements" />
+        <meta property="og:image" content="https://ahmad-web-dev.vercel.app/preview.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://ahmad-web-dev.vercel.app" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ahmad Web Dev" />
-        <meta
-          name="twitter:description"
-          content="A Fullstack developer solution to your customized web requirements"
-        />
-        <meta name="twitter:image" content="https://ahmad-web-dev.vercel.app/preview.PNG" />
+        <meta name="twitter:description" content="A Fullstack developer solution to your customized web requirements" />
+        <meta name="twitter:image" content="https://ahmad-web-dev.vercel.app/preview.jpg" />
       </Head>
+
 
       <body className={`${FiraCode.className} antialiased`}>
         <ThemeProvider
