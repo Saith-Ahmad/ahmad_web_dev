@@ -7,10 +7,10 @@ import { Spotlight } from "../ui/SpotLight";
 
 function Hero() {
     return (
-        <div className="min-h-[115vh] md:min-h-[110vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]  flex items-center justify-center overflow-hidden">
+        <div className="min-h-[100vh] md:min-h-[110vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-white/[0.1] bg-grid-black/[0.1]  flex items-center justify-center overflow-hidden">
             <div
                 id="hero"
-                className="py-16  container items-center justify-center mt-14"
+                className="md:py-16 py-10  container items-center justify-center mt-14"
             >
                 <div className="flex flex-col items-center justify-center gap-3">
                     <div className="relative p-3 rounded-full px-6 py-2 transition duration-300 text-d_bg_purple_dark dark:text-white font-normal text-base shadow-[inset_0_0_20px_#590ab4f9] dark:shadow-[inset_0_0_20px_#c298f5b8]">
