@@ -48,7 +48,7 @@ export function Testimonial() {
   return (
     <div>
     <div className=" mb-12 min-h-[100vh] relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  md:shadow-xl">
-      <div className="flex flex-col justify-center items-center gap-2 container">
+      <div className="flex flex-col justify-center items-center gap-2 container relative z-10">
         <div className="relative p-3 rounded-full px-6 py-2 transition duration-300 text-d_bg_purple_dark dark:text-white font-normal text-base shadow-[inset_0_0_20px_#590ab4f9] dark:shadow-[inset_0_0_20px_#c298f5b8]">
             Client Success Stories
           <BorderBeam

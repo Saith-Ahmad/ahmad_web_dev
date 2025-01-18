@@ -14,7 +14,7 @@ export function ProjectsGrid() {
     const filteredProjects = projects.filter((project) => project.category === filter);
     return (
         <div className="flex flex-col">
-            <div className="flex gap-3 mb-2 justify-center items-center flex-wrap">
+            <div className="flex md:gap-3 gap-2 md:mb-2 justify-center items-center flex-wrap">
                 {[ "fullstack", "frontend", "webflow", "wordpress"].map(
                     (category) => (
                         <button
@@ -31,7 +31,7 @@ export function ProjectsGrid() {
                 )}
             </div>
 
-            <div className="flex flex-col md:flex-row justify-center gap-5 flex-wrap">
+            <div className="flex flex-col md:flex-row justify-center gap-5  flex-wrap">
                 {filteredProjects.map((item, index) => (
                     <div key={index}>
                         <CardContainer className="p-0">

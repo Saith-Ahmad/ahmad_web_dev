@@ -6,7 +6,7 @@ import { TextAnimate } from '../ui/text-animate'
 function Work() {
   return (
     <div id='work' className=' relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-dot-white/[0.1] bg-dot-black/[0.1]  overflow-hidden shadow-xl'>
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_40%,purple)]"></div>
+      <div className="hidden md:flex absolute pointer-events-none inset-0  items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_40%,purple)]"></div>
       <div className='container'>
         <div className=' flex flex-col items-center justify-center mb-5 mt-10 gap-3'>
           <div className="relative p-3 rounded-full px-6 py-2 transition duration-300 text-d_bg_purple_dark dark:text-white font-normal text-base shadow-[inset_0_0_20px_#590ab4f9] dark:shadow-[inset_0_0_20px_#c298f5b8]">

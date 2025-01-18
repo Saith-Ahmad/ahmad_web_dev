@@ -10,9 +10,9 @@ function Technologies() {
         <div className=' py-20 w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-small-white/[0.1] bg-grid-small-black/[0.1] relative flex items-center justify-center overflow-hidden'>
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-950 dark:bg-opacity-10 backdrop-blur-3xl bg-opacity-30  bg-[#ffecff]  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,purple)]"></div>
 
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center '>
 
-                <div className='max-sm:max-w-[400px] flex flex-col justify-center items-center mb-10 gap-4 container overflow-hidden'>
+                <div className='max-sm:max-w-[400px] flex flex-col justify-center items-center mb-10 gap-4 container overflow-hidden relative z-10'>
                     <div className="relative p-3 rounded-full px-6 py-2 transition duration-300 text-d_bg_purple_dark dark:text-white font-normal text-base shadow-[inset_0_0_20px_#590ab4f9] dark:shadow-[inset_0_0_20px_#c298f5b8]">
                         Top Noch Technologies
                         <BorderBeam
