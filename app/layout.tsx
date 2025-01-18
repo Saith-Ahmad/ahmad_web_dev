@@ -30,7 +30,7 @@ export default function RootLayout({
           property="og:description"
           content="A Fullstack developer solution to your customized web requirements"
         />
-        <meta property="og:image" content="/preview.png"/>
+        <meta property="og:image" content="https://ahmad-web-dev.vercel.app/preview.png" />
         <meta property="og:url" content="https://ahmad-web-dev.vercel.app" />
         <meta property="og:type" content="website" />
 
@@ -41,8 +41,9 @@ export default function RootLayout({
           name="twitter:description"
           content="A Fullstack developer solution to your customized web requirements"
         />
-        <meta name="twitter:image" content="/preview.png" />
+        <meta name="twitter:image" content="https://ahmad-web-dev.vercel.app/preview.png" />
       </Head>
+
       <body className={`${FiraCode.className} antialiased`}>
         <ThemeProvider
           attribute="class"
