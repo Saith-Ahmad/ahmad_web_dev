@@ -35,7 +35,7 @@ function Experience() {
                         duration={5}
                     />
                 </div>
-                <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-semibold'>
+                <TextAnimate animation="blurInUp" by="word" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-semibold'>
                     My Journey So Far
                 </TextAnimate>
                 <p className="text-xl text-center max-w-[750px] dark:text-gray-300 ">

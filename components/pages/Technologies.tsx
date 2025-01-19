@@ -25,10 +25,10 @@ function Technologies() {
                         />
                     </div>
                     <div className='flex flex-col items-center justify-normal'>
-                        <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
+                        <TextAnimate animation="blurInUp" by="word" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
                             The Skills Behind
                         </TextAnimate>
-                        <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
+                        <TextAnimate animation="blurInUp" by="word" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
                             the Solutions
                         </TextAnimate>
                         <p className='text-xl text-center max-w-[750px] dark:text-gray-300 mt-2'>

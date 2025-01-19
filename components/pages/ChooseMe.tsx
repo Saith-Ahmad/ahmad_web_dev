@@ -5,7 +5,7 @@ import { BorderBeam } from '../ui/border-beam'
 
 function ChooseMe() {
     return (
-        <div className='md:min-h-[100vh] min-h-[80vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-[#ffffff05] bg-grid-[#00000005]  flex items-center justify-center overflow-x-hidden py-20'>
+        <div className='md:min-h-[100vh] min-h-[70vh] relative w-full dark:bg-[#00000011] bg-[#ffffff13]  dark:bg-grid-[#ffffff05] bg-grid-[#00000005]  flex items-center justify-center overflow-x-hidden md:py-10'>
             <div className='w-full h-full md:max-w-[1000px] container'>
                 <div className=' flex flex-col items-center justify-center mb-5'>
                     <div className="relative p-3 rounded-full px-6 py-2 transition duration-300 text-d_bg_purple_dark dark:text-white font-normal text-base shadow-[inset_0_0_20px_#590ab4f9] dark:shadow-[inset_0_0_20px_#c298f5b8]">
@@ -21,7 +21,7 @@ function ChooseMe() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-normal mb-10'>
-                    <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
+                    <TextAnimate animation="blurInDown" duration={0.9} by="word" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
                         Why Choose Me?
                     </TextAnimate>
                     <p className='text-xl text-center max-w-[750px] dark:text-gray-300 mt-2'>

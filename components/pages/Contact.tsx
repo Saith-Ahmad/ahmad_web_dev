@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div id='contact' className='container overflow-hidden'>
 
-      <div className='my-20 flex flex-col md:flex-row justify-between items-center syntax_highlighter sm:px-2 md:px-5'>
+      <div className='my-10 flex flex-col md:flex-row justify-between items-center syntax_highlighter sm:px-2 md:px-5'>
         <div className='flex flex-col justify-center items-start gap-3 p-5 mt-4'>
           <div className="relative p-3 rounded-full px-6  py-2 transition duration-300  text-white font-normal text-base  shadow-[inset_0_0_20px_#c298f5b8]">
             Your Next Big step Awaits
@@ -22,10 +22,10 @@ function Contact() {
             />
           </div>
           <div className='flex flex-col items-start '>
-            <TextAnimate animation="blurInUp" by="character" className='text-white  text-3xl  md:text-3xl lg:text-5xl text-center font-semibold'>
+            <TextAnimate animation="blurInUp" by="word" className='text-white  text-3xl  md:text-3xl lg:text-5xl text-center font-semibold'>
               Hire a Professional
             </TextAnimate>
-            <TextAnimate animation="blurInUp" by="character" className='text-white  text-3xl  md:text-3xl lg:text-5xl text-center font-semibold'>
+            <TextAnimate animation="blurIn" by="word" duration={1.0} className='text-white  text-3xl  md:text-3xl lg:text-5xl text-center font-semibold'>
               Who Delivers
             </TextAnimate>
           </div>

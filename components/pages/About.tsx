@@ -23,7 +23,7 @@ function About() {
         </div>
 
         <div className='flex flex-col justify-center items-center'>
-          <TextAnimate animation="blurInUp" by="character" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-semibold'>
+          <TextAnimate animation="blurIn" by="character" className='dark:text-white text-text_purple text-4xl  md:text-5xl lg:text-6xl text-center font-semibold'>
             About Me
           </TextAnimate>
           <p className="text-xl text-center max-w-[750px] dark:text-gray-300 mt-2">
