@@ -25,14 +25,11 @@ function Technologies() {
                         />
                     </div>
                     <div className='flex flex-col items-center justify-normal'>
-                        <TextAnimate animation="blurInUp" by="word" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
-                            The Skills Behind
-                        </TextAnimate>
-                        <TextAnimate animation="blurInUp" by="word" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
-                            the Solutions
+                        <TextAnimate animation="slideDown" by="word" className='dark:text-white text-text_purple text-3xl sm:text-4xl  md:text-5xl lg:text-6xl text-center font-medium'>
+                            My Toolkit
                         </TextAnimate>
                         <p className='text-xl text-center max-w-[750px] dark:text-gray-300 mt-2'>
-                            The cutting-edge tools and frameworks I use to bring visions to life.
+                        Technologies that help me turn ideas into innovative, functional websites designed for performance, user engagement, and long-term impact
                         </p>
                     </div>
                 </div>
@@ -41,7 +38,7 @@ function Technologies() {
                         {
                             techIcons.map((item) => (
                                 <div className='custom_card_class p-5 !rounded-full' key={item.icon}>
-                                    <Image src={item.icon} alt='icon' width={40} height={40} unoptimized />
+                                    <Image src={item.icon} alt='icon' width={30} height={30} unoptimized />
                                 </div>
                             ))
                         }
@@ -50,7 +47,7 @@ function Technologies() {
                         {
                             techIcons.map((item) => (
                                 <div className='custom_card_class p-5  !rounded-full' key={item.icon}>
-                                    <Image src={item.icon} alt='icon' width={40} height={40} unoptimized />
+                                    <Image src={item.icon} alt='icon' width={30} height={30} unoptimized />
                                 </div>
                             ))
                         }
