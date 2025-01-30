@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Head from 'next/head';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Rubik } from 'next/font/google';
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
@@ -50,6 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <GoogleAnalytics gaId="G-5CY0BCPM1G" />
       <body className={`${FiraCode.className} antialiased`}>
         <ThemeProvider
           attribute="class"
