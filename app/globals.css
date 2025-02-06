@@ -77,7 +77,32 @@
     @apply text-foreground;
   }
 }
+.wave::before,
+.wave::after {
+  @apply dark:bg-[#c5b1ff] bg-purple-600;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  /* background: #a890ef; */
+  animation: wave_animation 1.5s ease-out infinite;
+}
 
+.wave::before {
+  animation-delay: 0.4s;
+}
+
+
+@keyframes wave_animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
 
 .custom_card_class{
   @apply bg-black bg-opacity-10 dark:bg-opacity-30 backdrop-blur-lg rounded-xl  shadow-[#0000002f] shadow-md dark:shadow-[#d8b4fe58];
