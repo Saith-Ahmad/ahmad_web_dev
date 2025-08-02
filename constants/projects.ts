@@ -176,6 +176,24 @@ export const projects = [
       category: "fullstack",
     },
     {
+      title: "Beyond Hut, A full stack recruitment platform",
+      description:
+        'A recruitment platform,"Beyond Hut," designed to connect job seekers with employers. Invloves blogs, job listings, and application management.',
+      image: "/projects/20.png",
+      tech: ["Headless CMS", "Next-js", "Tailwind", "Mongodb" , "Clerk"],
+      liveDemo: "https://beyondhut.com/",
+      category: "fullstack",
+    },
+    {
+      title: "Cayano, A Property Listing Platform",
+      description:
+        'A property listing platform, "Cayano," allowing users to list, search, and manage properties. Features user authentication and a modern UI.',
+      image: "/projects/19.png",
+      tech: ["Wordpress", "Elementor", "Responsive","Custom Coding"],
+      liveDemo: "https://cayano.co.uk/",
+      category: "wordpress",
+    },
+    {
       title: "A Finance Management System",
       description:
         'An expense management system, "Expense Mart," designed to help users track budgets, monitor expenses, and generate detailed reports for financial analysis.',

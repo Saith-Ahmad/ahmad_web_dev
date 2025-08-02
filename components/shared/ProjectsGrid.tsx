@@ -35,7 +35,7 @@ export function ProjectsGrid() {
                 {filteredProjects.map((item, index) => (
                     <div key={index}>
                         <CardContainer className="p-0">
-                            <CardBody className="min-h-[480px] project_card_class relative group/card  w-auto sm:w-[30rem] h-auto rounded-xl p-3">
+                            <CardBody className="min-h-[500px]  project_card_class relative group/card   w-auto sm:w-[30rem] h-auto rounded-xl p-3">
                                 <CardItem
                                     translateZ="70"
                                     rotateX={20}
